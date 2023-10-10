@@ -14,7 +14,7 @@ const getItems = (event: Event) => {
 	const daysAhead = getDateString(event.startDate, event.endDate)
 
 	return (
-		`<div>
+		`<div style="${styles.item}">
 			<div style="${styles.title}">
 				${event.title}
 			</div>
@@ -40,6 +40,7 @@ const getItems = (event: Event) => {
 
 export const getBlock = (events: Event[]) => {
 	const sphere: Sphere = events[0].sphere
+	const items = events.map(event => getItems(event)).join('')
 
 	return (
 		`<div style="${styles.block}">
@@ -49,7 +50,7 @@ export const getBlock = (events: Event[]) => {
 			</div>
 
 			<div>
-				${events.map(event => getItems(event))}
+				${items}
 			</div>
 		</div>`
 	)

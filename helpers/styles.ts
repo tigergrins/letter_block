@@ -1,7 +1,7 @@
 export const styles = {
 	block: 'width: 20rem; padding: 1rem; font-family: "Inter", sans-serif;',
 	header: 'display: flex; justify-content: start;',
-	content: 'padding: 1rem; margin-top: 0.5rem; background: white; border-radius: 1.5rem;',
+	item: 'padding: 1rem; margin-top: 0.5rem; background: white; border-radius: 1.5rem;',
 	description: 'display: flex; justify-content: space-between; margin-top: 1rem;',
 	date: 'display: flex; align-items: center; color: rgba(0, 0, 0, 0.67); font-size: 0.75rem;',
 	title: 'font-weight: 500;',
